@@ -1,0 +1,55 @@
+SISTEC
+1) Se creo la DB
+2) Creación del TEMPLATE
+3) Creación de modulo SERVICIOS
+4) Asiganar los logotipos al TEMPLATE
+
+#	TODO
+	OK	1.-	Cargar los datos del equipo seleccionado. SERVICIOS.CREATE
+	OK 	2.- Cargar el id del usuario. SERVICIOS.CREATE
+	OK 3.-	Mostrar el area a la que pertenece el usuario que inicio session. SERVICIOS.CREATE
+	OK 4.- Se quita el campo fecha_solucion de la tabla de servicios. DB.SERVICIOS
+	5.- Poner los campos timestamps y configurarlos. DB.SERVICIOS
+	6.- Anexar las reglas de validacion al enviar formulario. SERVICIOS.STORE {Video 22 y 23 de ArielMax}
+	OK 7.- Investigar sonre las relaciones
+	OK 8.- Obtener el nombre del usuario a partir de su ID. SERVICIOS.EDIT
+
+#	TODO
+	1.-	Validar cuando no existan caracteristicas o no se aya mandado el id del equipo a buscar. EQUIPO.CONTROLLER
+	2.- Agregar los campos MAC, IP, NODO, NOMBRE DE USUARIO DEL PC, GRUPO DE TRABAJO, a la tabla de caracteristicas del equipo
+
+#	26/08/2015 11:59:49 p.m. 
+	1.- Validar el formulario de actaulizacion desde el controlador. SERVICES.UPDATE
+	2.- Validar la activacion de los check para cuando sea alta de seguimiento o update. SERVICIOS.SEGUIMIENTO FORM
+	3.- Pendiente el modulo de refacciones.	SERVICIOS.SEGUIMIENTO FORM
+	4.-	Checar el error del footer, se sobrepone en el content. 
+	5.- Agregar la opcion de quitar la alerta sobre respaldar la información.
+
+#	31/08/2015 09:55:23 a.m.
+	1.- El mensaje de exito al hacer una peticion, se empalma en la tabla de servicios
+	2.- Al hacer una actualización en el seguimiento no se deben repetir los datos en la db.
+	3.- No se pueda regresar a un estado pendiente en el formulario de seguimiento
+
+
+##		29/08/2015 08:05:29 p.m.		CONSULTAS	
+SET FOREIGN_KEY_CHECKS=0;
+TRUNCATE TABLE accesorios;
+TRUNCATE TABLE areas;
+TRUNCATE TABLE asistencia_tecnica;
+TRUNCATE TABLE caracteristicas_equipo;
+TRUNCATE TABLE caracteristicas_mantenimiento;
+TRUNCATE TABLE equipos;
+TRUNCATE TABLE programas_instalar;
+TRUNCATE TABLE refacciones;
+TRUNCATE TABLE reviciones_mantenimiento;
+TRUNCATE TABLE servicios;
+TRUNCATE TABLE software;
+TRUNCATE TABLE soportes;
+TRUNCATE TABLE soporte_equipo;
+TRUNCATE TABLE soluciones;
+TRUNCATE TABLE usuarios;
+SET FOREIGN_KEY_CHECKS=1;
+
+
+06/10/2015 11:06:31 a.m.
+
